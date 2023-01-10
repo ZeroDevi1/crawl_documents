@@ -1,0 +1,32 @@
+{
+  "name": "nodejs_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:vue3": "ts-node download_vue3.ts",
+    "dev:ts": "ts-node download_typescript.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/html-minifier": "^4.0.2",
+    "@types/html-pdf": "^3.0.0",
+    "@types/node": "^18.11.18",
+    "@types/puppeteer": "^7.0.4",
+    "@types/turndown": "^5.0.1"
+  },
+  "dependencies": {
+    "html-minifier": "^4.0.0",
+    "html-pdf": "^3.0.1",
+    "html-to-markdown": "^1.0.0",
+    "markdown-styles": "^3.2.0",
+    "pdf-puppeteer": "^1.1.10",
+    "puppeteer": "^19.4.1",
+    "ts-node": "^10.9.1",
+    "turndown": "^7.1.1",
+    "turndown-plugin-gfm": "^1.0.2"
+  }
+}
