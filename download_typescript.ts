@@ -99,7 +99,7 @@ async function downloadBook() {
     const data = await crawlPage('https://jkchao.github.io/typescript-book-chinese/');
     // 创建文件夹
     for (const heading of Object.keys(data)) {
-        const dirname = `typescript/${heading}`;
+        const dirname = `documents/typescript/${heading}`;
         mkdirRecursiveSync(dirname);
     }
     // 下载文章
@@ -111,7 +111,7 @@ async function downloadBook() {
             // 将 HTML 转换为 markdown
             const markdown = await convertToMarkdown(html);
             // 保存文件
-            const dirname = `typescript/${heading}`;
+            const dirname = `documents/typescript/${heading}`;
             const fileName = `${dirname}/${title}.md`;
             await saveToFile(markdown, fileName);
         }

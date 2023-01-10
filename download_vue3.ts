@@ -100,7 +100,7 @@ async function downloadBook() {
     console.log(data)
     // 创建文件夹
     for (const heading of Object.keys(data)) {
-        const dirname = `vue3/${heading}`;
+        const dirname = `documents/vue3/${heading}`;
         mkdirRecursiveSync(dirname);
     }
     // 下载文章
@@ -112,7 +112,7 @@ async function downloadBook() {
             // 将 HTML 转换为 markdown
             const markdown = await convertToMarkdown(html);
             // 保存文件
-            const dirname = `vue3/${heading}`;
+            const dirname = `documents/vue3/${heading}`;
             const fileName = `${dirname}/${title}.md`;
             await saveToFile(markdown, fileName);
         }
